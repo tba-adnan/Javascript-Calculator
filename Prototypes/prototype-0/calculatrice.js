@@ -63,7 +63,7 @@ function Operation(operationParam){
 function Egale(){
     x = parseFloat(xString);
     y = parseFloat(yString);
-    solution = Calculer(x,y,operation);
+    solution = Calculate(x,y,operation);
     Afficher(solution);
 }
 
