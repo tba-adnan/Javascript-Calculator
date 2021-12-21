@@ -27,10 +27,10 @@ function SelectNumber(number){
         yString += number;
     } 
 
-    Afficher();
+    Display();
 }
 
-function Afficher(number){
+function Display(number){
 
     let afficheur = document.getElementById("afficheur");
     afficheur.value = "";
@@ -54,7 +54,7 @@ function Operation(operationParam){
     if(operation == undefined){
         operation = operationParam;
         x = parseFloat(xString);
-        Afficher();
+        Display();
     }else{
         alert("Vous avez déjà choisi l'opération " + operation);
     }
@@ -64,7 +64,7 @@ function Egale(){
     x = parseFloat(xString);
     y = parseFloat(yString);
     solution = Calculate(x,y,operation);
-    Afficher(solution);
+    Display(solution);
 }
 
 function Init(){
