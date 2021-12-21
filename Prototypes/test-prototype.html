@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype - 1</title>
+</head>
+<!-- --- -->
+<body>
+    <input type="text" id="box1"><br/>
+    <input type="text" id="box2"><br/>
+    <p>Résultats : </p>
+    <input type="text" id="+"><br/>
+    <input type="button" value="=" onclick="calcSum()"><br/>
+    <input type="button" value="1" onclick=""><br/>
+    <input type="button" value="2" onclick=""><br/>
+    <input type="button" value="3" onclick=""><br/>
+    
+    <script>
+    //
+    function calcSum(){
+    let box1 = document.getElementById("box1").value;
+    let box2 = document.getElementById("box2").value;
+    let sum = Number(box1) + Number(box2);
+    document.getElementById("+").value = sum;
+    }
+    //
+    </script>
+</body>
+</html>
