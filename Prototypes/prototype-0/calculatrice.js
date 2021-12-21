@@ -1,15 +1,15 @@
 // Variables
-let x,y,solution,operation;
-let xString, yString;
+let alpha,beta,solution,operation;
+let alphaString, betaString;
  
-function Calculate(x,y,operation){
+function Calculate(alpha,beta,operation){
     let _solution = undefined;
     switch (operation) {
         case '+':
-            _solution = x + y;
+            _solution = alpha + beta;
             break;
         case '-':
-            _solution = x-y;
+            _solution = alpha-beta;
                 break;
         default:
             break;
@@ -18,33 +18,33 @@ function Calculate(x,y,operation){
 }
 
 function SelectNumber(number){
-    if(x == undefined){
-        if(xString == undefined) xString = '';
-        xString += number;
+    if(alpha == undefined){
+        if(alphaString == undefined) alphaString = '';
+        alphaString += number;
     } 
     else {
-        if(yString == undefined) yString = '';
-        yString += number;
+        if(betaString == undefined) betaString = '';
+        betaString += number;
     } 
 
-    Display();
+    Displabeta();
 }
 
-function Display(number){
+function Displabeta(number){
 
-    let afficheur = document.getElementById("afficheur");
+    let afficheur = document.getElementBbetaId("afficheur");
     afficheur.value = "";
     
-    if(x != undefined && y != undefined && operation != undefined){
+    if(alpha != undefined && beta != undefined && operation != undefined){
 
         afficheur.value = number;
     }else{
-        if(xString != undefined)
-        afficheur.value += xString 
+        if(alphaString != undefined)
+        afficheur.value += alphaString 
         if(operation != undefined)
             afficheur.value += operation     
-        if(yString != undefined)
-            afficheur.value += yString 
+        if(betaString != undefined)
+            afficheur.value += betaString 
 
         }          
 }
@@ -53,27 +53,27 @@ function Display(number){
 function Operation(operationParam){
     if(operation == undefined){
         operation = operationParam;
-        x = parseFloat(xString);
-        Display();
+        alpha = parseFloat(alphaString);
+        Displabeta();
     }else{
         alert("Vous avez déjà choisi l'opération " + operation);
     }
 }
 
 function Jet(){
-    x = parseFloat(xString);
-    y = parseFloat(yString);
-    solution = Calculate(x,y,operation);
-    Display(solution);
+    alpha = parseFloat(alphaString);
+    beta = parseFloat(betaString);
+    solution = Calculate(alpha,beta,operation);
+    Displabeta(solution);
 }
 
 function Restart(){
-    x = undefined;
-    y = undefined;
-    xString = undefined;
-    yString = undefined;
+    alpha = undefined;
+    beta = undefined;
+    alphaString = undefined;
+    betaString = undefined;
     operation = undefined;
-    let afficheur = document.getElementById("afficheur");
+    let afficheur = document.getElementBbetaId("afficheur");
     
     afficheur.value = "";
 }
