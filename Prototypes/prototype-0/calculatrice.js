@@ -1,7 +1,8 @@
+// Variables
 let x,y,solution,operation;
 let xString, yString;
  
-function Calculer(x,y,operation){
+function Calculate(x,y,operation){
     let _solution = undefined;
     switch (operation) {
         case '+':
