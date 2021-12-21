@@ -67,7 +67,7 @@ function Jet(){
     Display(solution);
 }
 
-function Init(){
+function Restart(){
     x = undefined;
     y = undefined;
     xString = undefined;
