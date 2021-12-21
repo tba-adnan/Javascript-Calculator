@@ -1,4 +1,4 @@
- let x,y,solution,operation;
+let x,y,solution,operation;
 let xString, yString;
  
 function Calculer(x,y,operation){
@@ -15,7 +15,6 @@ function Calculer(x,y,operation){
     }
     return _solution;
 }
- 
 
 function ClickNumber(number){
     if(x == undefined){
