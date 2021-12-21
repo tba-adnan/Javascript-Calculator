@@ -17,7 +17,7 @@ function Calculate(x,y,operation){
     return _solution;
 }
 
-function ClickNumber(number){
+function SelectNumber(number){
     if(x == undefined){
         if(xString == undefined) xString = '';
         xString += number;
