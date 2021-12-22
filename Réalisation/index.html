@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculatrice.js"></script>
+    
+ 
+</head>
+<body>
+    <div class="division">
+    <input type="text" id="afficheur" class="screen">
+    <button class="btn" onclick="SelectNumber(1)">1</button>
+    <button class="btn" onclick="SelectNumber(2)">2</button>
+    <button class="btn" onclick="SelectNumber(3)">3</button>
+    <button class="btn" onclick="SelectNumber(4)">4</button>
+    <button class="btn" onclick="SelectNumber(5)">5</button>
+    <button class="btn" onclick="SelectNumber(6)">6</button>
+    <button class="btn" onclick="SelectNumber(7)">7</button>
+    <button class="btn" onclick="SelectNumber(8)">8</button>
+    <button class="btn" onclick="SelectNumber(9)">9</button>
+    <button class="btn" onclick="SelectNumber(0)">0</button>
+    <!-- -->
+    <button class="btn" id="op" onclick="Operation('+')">+</button>
+    <button class="btn" id="op" onclick="Operation('-')">-</button>
+    <button class="btn" id="op" onclick="Operation('*')">x</button>
+    <button class="btn" id="op" onclick="Operation('/')">/</button>
+    <button class="btn" id="op" onclick="Jet()">=</button>
+    <button class="btn" id="YWRuYW5lIHdhcyBoZXJl" onclick="Restart()">C</button>
+    </div>
+</body>
+</html>
