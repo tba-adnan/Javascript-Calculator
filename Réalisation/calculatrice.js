@@ -1,8 +1,8 @@
 // Variables
-let x,y,solution,operation;
+let x, y, solution, operation;
 let xString, yString;
 
-function Calculate(x,y,operation){
+function Calculate(x, y, operation) {
     let _solution = undefined;
     switch (operation) {
         case '+':
@@ -10,70 +10,69 @@ function Calculate(x,y,operation){
             break;
         case '-':
             _solution = x - y;
-                break;
+            break;
         case '/':
             _solution = x / y;
-                break;
+            break;
         case '*':
             _solution = x * y;
-                break;
+            break;
         default:
             break;
     }
     return _solution;
 }
 
-function SelectNumber(number){
-    if(x == undefined){
-        if(xString == undefined) xString = '';
+function SelectNumber(number) {
+    if (x == undefined) {
+        if (xString == undefined) xString = '';
         xString += number;
-    } 
-    else {
-        if(yString == undefined) yString = '';
+    } else {
+        if (yString == undefined) yString = '';
         yString += number;
-    } 
+    }
 
     Display();
 }
 
-function Display(number){
+function Display(number) {
 
     let afficheur = document.getElementById("afficheur");
     afficheur.value = "";
-    
-    if(x != undefined && y != undefined && operation != undefined){
+
+    if (x != undefined && y != undefined && operation != undefined) {
 
         afficheur.value = number;
-    }else{
-        if(xString != undefined)
-        afficheur.value += xString 
-        if(operation != undefined)
-            afficheur.value += operation     
-        if(yString != undefined)
-            afficheur.value += yString 
+    } else {
+        if (xString != undefined)
+            afficheur.value += xString
+        if (operation != undefined)
+            afficheur.value += operation
+        if (yString != undefined)
+            afficheur.value += yString
 
-        }          
+    }
 }
 
 
-function Operation(operationParam){
-    if(operation == undefined){
+function Operation(operationParam) {
+    if (operation == undefined) {
         operation = operationParam;
         x = parseFloat(xString);
         Display();
-    }else{
+    } else {
         alert("Une operation existent déjà! " + operation);
     }
 }
 
-function Jet(){
+function Jet() {
     x = parseFloat(xString);
     y = parseFloat(yString);
-    solution = Calculate(x,y,operation);
+    solution = Calculate(x, y, operation);
     Display(solution);
 }
 
-function Restart(){
+function Restart() {
     x = undefined;
     y = undefined;
     xString = undefined;
