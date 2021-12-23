@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
      background-color: black; 
-}
+} 
 
 
 .division {
     display: block;
     width: 30%;
-    margin: 0 auto;
+    margin: 
+    auto;
     padding: 25px;
 }
 
