@@ -62,7 +62,7 @@ function Operation(operationParam){
         x = parseFloat(xString);
         Display();
     }else{
-        alert("Vous avez déjà choisi une opération! " + operation);
+        alert("Une operation existent déjà! " + operation);
     }
 }
 
